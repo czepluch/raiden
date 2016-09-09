@@ -575,6 +575,4 @@ library NettingChannelLibrary {
             n[i-start] = a[i];
         }
     }
-
-    function () { throw; }
 }
