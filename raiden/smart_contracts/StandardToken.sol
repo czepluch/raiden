@@ -1,3 +1,4 @@
+pragma solidity ^0.4.0;
 /*
 This implements ONLY the standard functions and NOTHING else.
 For a token like you would want to deploy in something like Mist, see HumanStandardToken.sol.
