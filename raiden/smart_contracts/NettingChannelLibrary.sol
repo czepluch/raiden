@@ -39,19 +39,19 @@ library NettingChannelLibrary {
     modifier notSettledButClosed(Data storage self) {
         if (self.settled > 0 || self.closed == 0)
             throw;
-        _
+        _;
     }
 
     modifier stillTimeout(Data storage self) {
         if (self.closed + self.settleTimeout < block.number)
             throw;
-        _
+        _;
     }
 
     modifier timeoutOver(Data storage self) {
         if (self.closed + self.settleTimeout > block.number)
             throw;
-        _
+        _;
     }
 
     /// @notice deposit(uint) to deposit amount to channel.

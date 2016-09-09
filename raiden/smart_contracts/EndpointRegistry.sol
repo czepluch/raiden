@@ -18,7 +18,7 @@ contract EndpointRegistry{
         if( equals(str, "") == true) {
             throw;
         }
-        _
+        _;
     }
 
     /*

@@ -11,7 +11,7 @@ contract NettingChannelContract {
 
     modifier settleTimeoutNotTooLow(uint t) {
         if (t < 6) throw;
-        _
+        _;
     }
 
     function NettingChannelContract(
